@@ -11,17 +11,17 @@ public stepTracker(int num){
  activeDays = 0;
  totalSteps = 0;
  }
- public addDailySteps(int num){
+ public void addDailySteps(int num){
   totalSteps += num;
   if(num >= minimum){
    activeDays += 1;
   }
   days += 1;
  }
- public activeDays(){
+ public int activeDays(){
   return activeDays;
  }
- public averageSteps(){
+ public double averageSteps(){
   return (double)totalSteps/days;
  }
 } 
